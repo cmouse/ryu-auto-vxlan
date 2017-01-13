@@ -8,6 +8,18 @@ Please read the script before using.
 
 This script does not work without modifying ryu code.
 
+Debian jessie instructions for hub
+----------------------------------
+```
+allow-ovs ovsbr0
+iface ovsbr0 inet manual
+  ovs_type OVSBridge
+  ovs_extra set-controller ovsbr0 tcp:127.0.0.1:6633
+  pre-up ovs-vsctl set-manager ptcp:6640
+  mtu 1280
+  address 10.1.10.2/24
+```
+
 Debian jessie instructions for spokes
 -------------------------------------
 ```
