@@ -6,7 +6,7 @@ virtual switches. Assumed topology is hub-spoke.
 
 Please read the script before using.
 
-This script does not work without modifying ryu code.
+Works with ryu version 4.10 or later.
 
 Debian jessie instructions for hub
 ----------------------------------
